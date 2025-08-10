@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <form id="otpForm">
+        <h2>Enter OTP</h2>
+        <p>Please enter the 4-digit code sent to your email.</p>
+
+        <div class="otp-container">
+            <input type="text" class="otp-input" maxlength="1" pattern="\d*" required>
+            <input type="text" class="otp-input" maxlength="1" pattern="\d*" required>
+            <input type="text" class="otp-input" maxlength="1" pattern="\d*" required>
+            <input type="text" class="otp-input" maxlength="1" pattern="\d*" required>
+        </div>
+
+        <button type="submit">Verify OTP</button>
+        <span id="message"></span>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
